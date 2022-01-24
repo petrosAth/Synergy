@@ -1,0 +1,39 @@
+section: screens
+	debian:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
+		switchCorners = none +top-right +bottom-right 
+		switchCornerSize = 200
+	wsWindows:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
+		switchCorners = none +top-left +bottom-left 
+		switchCornerSize = 200
+end
+
+section: aliases
+end
+
+section: links
+	debian:
+		right = wsWindows
+	wsWindows:
+		left = debian
+end
+
+section: options
+	relativeMouseMoves = false
+	win32KeepForeground = false
+	disableLockToScreen = false
+	clipboardSharing = true
+	clipboardSharingSize = 3072
+	switchCorners = none 
+	switchCornerSize = 0
+	mousebutton(4) = keystroke(WWWBack)
+    mousebutton(5) = keystroke(WWWForward)
+end
+
