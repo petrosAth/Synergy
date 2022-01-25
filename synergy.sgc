@@ -4,21 +4,21 @@ section: screens
 		halfDuplexNumLock = false
 		halfDuplexScrollLock = false
 		xtestIsXineramaUnaware = false
-		switchCorners = none +top-right +bottom-right 
+		switchCorners = none +top-right +bottom-right
 		switchCornerSize = 200
-	wsWindows:
+	wsManjaro:
 		halfDuplexCapsLock = false
 		halfDuplexNumLock = false
 		halfDuplexScrollLock = false
 		xtestIsXineramaUnaware = false
-		switchCorners = none +top-left +top-right +bottom-left +bottom-right 
+		switchCorners = none +top-left +top-right +bottom-left +bottom-right
 		switchCornerSize = 200
 	tvWindows:
 		halfDuplexCapsLock = false
 		halfDuplexNumLock = false
 		halfDuplexScrollLock = false
 		xtestIsXineramaUnaware = false
-		switchCorners = none +top-left +bottom-left 
+		switchCorners = none +top-left +bottom-left
 		switchCornerSize = 200
 end
 
@@ -27,12 +27,12 @@ end
 
 section: links
 	debian:
-		right = wsWindows
-	wsWindows:
+		right = wsManjaro
+	wsManjaro:
 		left = debian
 		right = tvWindows
 	tvWindows:
-		left = wsWindows
+		left = wsManjaro
 end
 
 section: options
@@ -41,9 +41,8 @@ section: options
 	disableLockToScreen = false
 	clipboardSharing = true
 	clipboardSharingSize = 3072
-	switchCorners = none +top-left +top-right +bottom-left +bottom-right  
+	switchCorners = none +top-left +top-right +bottom-left +bottom-right
 	switchCornerSize = 200
 	mousebutton(4) = keystroke(WWWBack)
     mousebutton(5) = keystroke(WWWForward)
 end
-
