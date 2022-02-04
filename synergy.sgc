@@ -11,6 +11,13 @@ section: screens
 		halfDuplexNumLock = false
 		halfDuplexScrollLock = false
 		xtestIsXineramaUnaware = false
+		switchCorners = none +top-left +top-right +bottom-left +bottom-right 
+		switchCornerSize = 200
+	tvWindows:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
 		switchCorners = none +top-left +bottom-left 
 		switchCornerSize = 200
 end
@@ -23,6 +30,9 @@ section: links
 		right = wsWindows
 	wsWindows:
 		left = debian
+		right = tvWindows
+	tvWindows:
+		left = wsWindows
 end
 
 section: options
@@ -31,8 +41,8 @@ section: options
 	disableLockToScreen = false
 	clipboardSharing = true
 	clipboardSharingSize = 3072
-	switchCorners = none 
-	switchCornerSize = 0
+	switchCorners = none +top-left +top-right +bottom-left +bottom-right  
+	switchCornerSize = 200
 	mousebutton(4) = keystroke(WWWBack)
     mousebutton(5) = keystroke(WWWForward)
 end
